@@ -1,3 +1,4 @@
+import { Button } from "@/lib";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,9 +7,9 @@ export const metadata: Metadata = {
 
 const Home = () => {
   return (
-    <h1 className="text-3xl font-bold underline text-center text-red-500">
-      Clickup clone
-    </h1>
+    <Button variant="destructive" className="m-10">
+      Clickup
+    </Button>
   );
 };
 
