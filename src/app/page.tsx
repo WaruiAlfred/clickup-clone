@@ -1,4 +1,3 @@
-import HomePage from "@/components/HomePage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -6,7 +5,11 @@ export const metadata: Metadata = {
 };
 
 const Home = () => {
-  return <HomePage />;
+  return (
+    <h1 className="text-3xl font-bold underline text-center text-red-500">
+      Clickup clone
+    </h1>
+  );
 };
 
 export default Home;

@@ -1,10 +1,11 @@
-import ThemeProviderWrapper from "@/ThemeProvider";
-import { Metadata } from "next";
+// import ThemeProviderWrapper from "@/ThemeProviderWrapper";
+
+import type { Metadata } from "next";
+import "../../styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Clickup",
   description: "This is a Clickup clone",
-  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
@@ -17,7 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ThemeProviderWrapper>{children}</ThemeProviderWrapper>
+        {/* <ThemeProviderWrapper>{children}</ThemeProviderWrapper> */}
+        {children}
       </body>
     </html>
   );
